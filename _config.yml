@@ -1,19 +1,14 @@
-# Dependencies
 markdown: kramdown
 highlighter: pygments
+permalink: /news/:year/:month/:day/:title/
+excerpt_separator: ""
 
-# Permalinks
-relative_permalinks: false
-permalink: "/news/:year/:month/:day/:title/"
+gauges_id: 503c5af6613f5d0f19000027
+google_analytics_id: UA-50755011-1
 
-# Setup
-url: http://magephp.github.io
-baseurl: /
-exclude: [vendor]
-excerpt_separator: ''
-repository: https://gitlab.com/nntoan/magallanes
+repository: https://github.com/jekyll/jekyll
+help_url: https://github.com/jekyll/jekyll-help
+
 collections:
   docs:
     output: true
-sass:
-  style: compressed
