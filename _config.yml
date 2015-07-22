@@ -1,10 +1,16 @@
----
+# Dependencies
 markdown: kramdown
 highlighter: pygments
+
+# Permalinks
 relative_permalinks: false
 permalink: "/news/:year/:month/:day/:title/"
+
+# Setup
+url: http://magephp.github.io
+baseurl: /
 excerpt_separator: ''
-repository: https://gitlab.com/nntoan/magalllanes
+repository: https://gitlab.com/nntoan/magallanes
 collections:
   docs:
     output: true
