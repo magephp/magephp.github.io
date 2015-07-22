@@ -3,7 +3,7 @@ cache: bundler
 sudo: false
 rvm: 2.1
 exclude: [vendor]
-before_script: bundle update
+before_script: bundle install --no-deployment
 script: script/cibuild
 notifications:
   email:
