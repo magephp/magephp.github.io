@@ -1,36 +1,38 @@
 ---
 layout: default
-title: Jekyll &bull; Simple, blog-aware, static sites
+title: Magallanes &bull; A PHP Deployment Tool
 overview: true
 ---
 
 <section class="intro">
   <div class="grid">
     <div class="unit whole center-on-mobiles">
-      <p class="first">Transform your plain text into static&nbsp;websites and&nbsp;blogs.</p>
+      <p class="first">Deploy your applications with lightning speed.</p>
     </div>
   </div>
 </section>
 <section class="features">
   <div class="grid">
     <div class="unit one-third">
-      <h2>Simple</h2>
+      <h2>Simple Usage</h2>
       <p>
-        No more databases, comment moderation, or pesky updates to install—just <em>your content</em>.
+        No more FTP, SFTP, or any 3rd party tool to upload-just <em>a single command</em>.
       </p>
-      <a href="/docs/usage/">How Jekyll works &rarr;</a>
+      <a href="/docs/usage/">How Magallanes works &rarr;</a>
     </div>
     <div class="unit one-third">
-      <h2>Static</h2>
-      <p><a href="http://daringfireball.net/projects/markdown/">Markdown</a> (or <a href="http://redcloth.org/textile">Textile</a>), <a href="https://github.com/Shopify/liquid/wiki">Liquid</a>, HTML <span class="amp">&amp;</span> CSS go in. Static sites come out ready for deployment.</p>
-      <a href="/docs/templates/">Jekyll template guide &rarr;</a>
+      <h2>Fast Deploy</h2>
+      <p>
+        Capistrano ~ 20s, Rocketeer ~ 15s, Deployer ~ 12s, Mina ~ 8s; <b>Magallanes ~ 4s</b>.
+      </p>
+      <a href="/docs/strategies/">Deployment strategies &rarr;</a>
     </div>
     <div class="unit one-third">
-      <h2>Blog-aware</h2>
+      <h2>Open Source</h2>
       <p>
-        Permalinks, categories, pages, posts, and custom layouts are all first-class citizens here.
+        Why we need to pay for a deploy service? Join with us to build this loveable deployment tool.
       </p>
-      <a href="/docs/migrations/">Migrate your blog &rarr;</a>
+      <a href="/docs/contribute/">Contributing guide &rarr;</a>
     </div>
     <div class="clear"></div>
   </div>
@@ -43,48 +45,31 @@ overview: true
     <div class="unit golden-large code">
       <p class="title">Quick-start Instructions</p>
       <div class="shell">
-        <p class="line">
+	<p class="line">
           <span class="path">~</span>
           <span class="prompt">$</span>
-          <span class="command">gem install jekyll</span>
+          <span class="command">cd my-project</span>
         </p>
         <p class="line">
-          <span class="path">~</span>
+          <span class="path">~/my-project</span>
           <span class="prompt">$</span>
-          <span class="command">jekyll new my-awesome-site</span>
+          <span class="command">composer require "nntoan/magallanes=~1.0.*"</span>
         </p>
         <p class="line">
-          <span class="path">~</span>
+          <span class="path">~/my-project</span>
           <span class="prompt">$</span>
-          <span class="command">cd my-awesome-site</span>
+          <span class="command">composer update nntoan/magallanes</span>
         </p>
         <p class="line">
-          <span class="path">~/my-awesome-site</span>
+          <span class="path">~/my-project</span>
           <span class="prompt">$</span>
-          <span class="command">jekyll serve</span>
+          <span class="command">bin/mage version</span>
         </p>
         <p class="line">
-          <span class="output"># => Now browse to http://localhost:4000</span>
+          <span class="output"># => Now we are ready to deploy!</span>
         </p>
       </div>
     </div>
     <div class="clear"></div>
-  </div>
-</section>
-<section class="free-hosting">
-  <div class="grid">
-    <div class="unit whole">
-      <div class="grid pane">
-        <div class="unit whole center-on-mobiles">
-          <img src="img/octojekyll.png" width="300" height="251" alt="Free Jekyll hosting on GitHub Pages">
-          <div class="pane-content">
-            <h2 class="center-on-mobiles"><strong>Free hosting</strong> with GitHub Pages</h2>
-            <p>Sick of dealing with hosting companies? <a href="http://pages.github.com/">GitHub Pages</a> are <em>powered by Jekyll</em>, so you can easily deploy your site using GitHub for free&mdash;<a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">custom domain name</a> and&nbsp;all.</p>
-            <a href="http://pages.github.com/">Learn more about GitHub Pages &rarr;</a>
-          </div>
-        </div>
-        <div class="clear"></div>
-      </div>
-    </div>
   </div>
 </section>

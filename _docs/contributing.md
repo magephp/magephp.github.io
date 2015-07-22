@@ -6,7 +6,7 @@ next_section: history
 permalink: /docs/contributing/
 ---
 
-So you've got an awesome idea to throw into Jekyll. Great! Please keep the
+So you've got an awesome idea to throw into Magallanes. Great! Please keep the
 following in mind:
 
 * If you're creating a small fix or patch to an existing feature, just a simple
@@ -66,7 +66,7 @@ Here's the most direct way to get your work merged into the project:
 * Clone down your fork:
 
 {% highlight bash %}
-git clone git://github.com/<username>/jekyll.git
+git clone git://gitlab.com/<username>/magallanes.git
 {% endhighlight %}
 
 * Create a topic branch to contain your change:
@@ -85,13 +85,13 @@ git checkout -b my_awesome_feature
 git push origin my_awesome_feature
 {% endhighlight %}
 
-* Create a pull request against jekyll/jekyll:master and describe what your
+* Create a pull request against vuelo/magallanes:master and describe what your
   change does and the why you think it should be merged.
 
 Updating Documentation
 ----------------------
 
-We want the Jekyll documentation to be the best it can be. We've
+We want the Magallanes documentation to be the best it can be. We've
 open-sourced our docs and we welcome any pull requests if you find it
 lacking.
 
@@ -102,7 +102,7 @@ Jekyll's repo on GitHub.com.
 All documentation pull requests should be directed at `master`.  Pull
 requests directed at another branch will not be accepted.
 
-The [Jekyll wiki]({{ site.repository }}/wiki) on GitHub
+The [Magallanes wiki]({{ site.repository }}/wiki) on GitHub
 can be freely updated without a pull request as all
 GitHub users have access.
 
@@ -116,7 +116,7 @@ Gotchas
 
 * If you want to bump the gem version, please put that in a separate commit.
   This way, the maintainers can control when the gem gets released.
-* Try to keep your patch(es) based from the latest commit on jekyll/jekyll.
+* Try to keep your patch(es) based from the latest commit on vuelo/magallanes.
   The easier it is to apply your work, the less work the maintainers have to do,
   which is always a good thing.
 * Please don't tag your GitHub issue with \[fix\], \[feature\], etc. The maintainers
@@ -125,9 +125,9 @@ Gotchas
 <div class="note">
   <h5>Let us know what could be better!</h5>
   <p>
-    Both using and hacking on Jekyll should be fun, simple, and easy, so if for
+    Both using and hacking on Magallanes should be fun, simple, and easy, so if for
     some reason you find it’s a pain, please <a
     href="{{ site.repository }}/issues/new">create an issue</a> on
-    GitHub describing your experience so we can make it better.
+    GitLab describing your experience so we can make it better.
   </p>
 </div>
