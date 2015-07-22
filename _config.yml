@@ -9,6 +9,7 @@ permalink: "/news/:year/:month/:day/:title/"
 # Setup
 url: http://magephp.github.io
 baseurl: /
+exclude: [vendor]
 excerpt_separator: ''
 repository: https://gitlab.com/nntoan/magallanes
 collections:
