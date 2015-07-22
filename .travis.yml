@@ -5,6 +5,9 @@ rvm: 2.1
 exclude: [vendor]
 before_script: bundle install --no-deployment
 script: script/cibuild
+branches:
+  only:
+    - gh-pages
 notifications:
   email:
     on_success: never
