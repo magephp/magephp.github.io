@@ -7,10 +7,14 @@ relative_permalinks: false
 permalink: "/news/:year/:month/:day/:title/"
 
 # Setup
+title: "Magallanes"
+tagline: "A PHP Deployment Tool"
 url: http://magephp.github.io
 baseurl: /
 exclude: [vendor]
 excerpt_separator: ''
+
+# Custom
 repository: https://gitlab.com/nntoan/magallanes
 collections:
   docs:
