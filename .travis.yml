@@ -1,0 +1,23 @@
+language: ruby
+rvm: 2.1
+sudo: false
+cache: bundler
+addons:
+addons:
+  apt:
+    packages:
+    - php
+    - curl
+install:
+  - curl -sS https://getcomposer.org/installer | php
+  - bundle install --no-deployment
+script:
+  - sh ./_shell/apigen.sh
+  - bundle exec jekyll build
+branches:
+  only:
+    - gh-pages
+notifications:
+  email:
+    on_success: never
+    on_failure: never
