@@ -1,0 +1,13 @@
+cache: bundler
+install:
+  - bundle install
+  - composer install
+before_script: ./_shell/apigen.sh
+script: bundle exec jekyll build
+branches:
+  only:
+    - gh-pages
+notifications:
+  email:
+    on_success: never
+    on_failure: never
