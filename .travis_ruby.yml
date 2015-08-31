@@ -1,0 +1,14 @@
+language: ruby
+rvm: 2.1
+sudo: false
+cache: bundler
+install:
+  - bundle install --no-deployment --path _vendor/bundle
+script: bundle exec jekyll build
+branches:
+  only:
+    - gh-pages
+notifications:
+  email:
+    on_success: never
+    on_failure: never
