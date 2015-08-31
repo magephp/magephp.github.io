@@ -1,6 +1,12 @@
 cache: bundler
+rvm: 2.1
+sudo: false
+cache:
+  directories:
+    - _vendor
+    - $HOME/.composer/cache
 install:
-  - bundle install
+  - bundle install --no-deployment --path _vendor/bundle
   - composer install
 before_script: ./_shell/apigen.sh
 script: bundle exec jekyll build
