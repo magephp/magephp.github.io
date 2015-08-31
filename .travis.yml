@@ -1,14 +1,16 @@
 language: ruby
 rvm: 2.1
 sudo: false
-cache: bundler
+cache:
+  directories:
+    - vendor/bundle
 addons:
 addons:
   apt:
     packages:
-    - curl
+      - curl
 install:
-  - bundle install --no-deployment
+  - bundle install --path vendor/bundle
 script:
   - bundle exec jekyll build
 branches:
