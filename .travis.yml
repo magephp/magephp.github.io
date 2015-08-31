@@ -6,13 +6,10 @@ addons:
 addons:
   apt:
     packages:
-    - php
     - curl
 install:
-  - curl -sS https://getcomposer.org/installer | php
   - bundle install --no-deployment
 script:
-  - sh ./_shell/apigen.sh
   - bundle exec jekyll build
 branches:
   only:

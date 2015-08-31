@@ -6,4 +6,3 @@ test/
 .DS_Store
 /.sass-cache
 /.api-cache
-/api
