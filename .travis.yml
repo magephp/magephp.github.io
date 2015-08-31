@@ -4,11 +4,6 @@ sudo: false
 cache:
   directories:
     - vendor/bundle
-addons:
-addons:
-  apt:
-    packages:
-      - curl
 install:
   - bundle install --path vendor/bundle
 script:
