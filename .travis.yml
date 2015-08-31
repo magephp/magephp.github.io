@@ -1,13 +1,14 @@
-cache: bundler
+language: php
 php: 5.6
 rvm: 2.1
-sudo: false
+sudo: required
 cache:
   directories:
     - _vendor
     - $HOME/.composer/cache
 before_install:
-  - composer self-update
+  - curl -sS https://getcomposer.org/installer | php
+  - mv composer.phar /usr/local/bin/composer
 install:
   - bundle install --no-deployment --path _vendor/bundle
   - composer install
