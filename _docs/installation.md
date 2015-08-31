@@ -6,25 +6,22 @@ next_section: usage
 permalink: /docs/installation/
 ---
 
-Getting Jekyll installed and ready-to-go should only take a few minutes. If it
+Getting Magallanes installed and ready-to-go should only take a few minutes. If it
 ever becomes a pain in the ass, please [file an
 issue]({{ site.repository }}/issues/new) (or submit a pull request)
 describing the issue you encountered and how we might make the process easier.
 
 ### Requirements
 
-Installing Jekyll is easy and straight-forward, but there are a few requirements
+Installing Magallanes is easy and straight-forward, but there are a few requirements
 you’ll need to make sure your system has before you start.
 
-- [Ruby](http://www.ruby-lang.org/en/downloads/) (including development
-  headers)
-- [RubyGems](http://rubygems.org/pages/download)
+- [Shell Access](https://en.wikipedia.org/wiki/Shell_%28computing%29) - Magallanes is a command line utility, therefore you will need access to a shell/terminal environment.
+- [PHP 5.3+](http://php.net/downloads.php) - Yes, it's time to grow up. Make sure that the PHP binary is on your shell path.
 - Linux, Unix, or Mac OS X
-- [NodeJS](http://nodejs.org), or another JavaScript runtime (for
-  CoffeeScript support).
 
 <div class="note info">
-  <h5>Running Jekyll on Windows</h5>
+  <h5>Running Magallanes on Windows</h5>
   <p>
     While Windows is not officially supported, it is possible to get it running
     on Windows. Special instructions can be found on our
@@ -32,68 +29,76 @@ you’ll need to make sure your system has before you start.
   </p>
 </div>
 
-## Install with RubyGems
+## Installing Magallanes System-wide (Recommended)
 
-The best way to install Jekyll is via
-[RubyGems](http://rubygems.org/pages/download). At the terminal prompt,
-simply run the following command to install Jekyll:
+The best way and simplest to install Magallanes is via
+[Bash](https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29). At the terminal prompt,
+simply run the following command to install Magallanes:
 
 {% highlight bash %}
-$ gem install jekyll
+$ wget https://magephp.github.io/download/magallanes.latest.tar.gz -O magallanes.tar.gz
+$ tar xfz magallanes
+$ cd magallanes
+$ bin/mage install --systemWide --installDir=/opt/magallanes
 {% endhighlight %}
 
-All of Jekyll’s gem dependencies are automatically installed by the above
-command, so you won’t have to worry about them at all. If you have problems
-installing Jekyll, check out the [troubleshooting](../troubleshooting/) page or
-[report an issue]({{ site.repository }}/issues/new) so the Jekyll
+The `install` command will copy the downloaded version to the configured `--installDir`. If you want to make it available to all users, then you can perform a `--systemWide` installation, this will create a symbolic link in `/usr/bin/mage` to the installation's executable; you have to be root or super user to perform a system wide install. If you have problems
+installing Magallanes, check out the [troubleshooting](../troubleshooting/) page or
+[report an issue]({{ site.repository }}/issues/new) so the Magallanes
 community can improve the experience for everyone.
 
 <div class="note info">
-  <h5>Installing Xcode Command-Line Tools</h5>
+  <h5>Compile to PHAR archive</h5>
   <p>
-    If you run into issues installing Jekyll's dependencies which make use of
-    native extensions and are using Mac OS X, you will need to install Xcode
-    and the Command-Line Tools it ships with. Download in
-    <code>Preferences &#8594; Downloads &#8594; Components</code>.
+    If you would like to take Magallanes with you, you can also
+    compile into a <code>PHAR</code> your current install, with the compile
+    command, which will create a <code>mage.phar</code> file.
+    In order for this to work, you must set the <code>phar.readonly</code>
+    <code>php.ini</code> variable to <code>Off</code>, at least on your <code>cli</code> configuration.
+{% highlight bash %}
+$ mage compile
+$ php mage.phar version
+{% endhighlight %}
   </p>
 </div>
 
-## Pre-releases
+## Installing with Composer
 
-In order to install a pre-release, make sure you have all the requirements
-installed properly and run:
+If you want to have all your tools defined in your project, now you can
+configure composer to install Magallanes! It's quite simple, just add the
+requirement line below to your project's composer.json file. Also `mage` is
+declared as a vendor binary, so you can invoke Magallanes using `bin/mage`. Pretty neat, right?!
 
-{% highlight bash %}
-gem install jekyll --pre
+{% highlight json %}
+"require-dev": {
+  "magephp/magallanes": "~1.0.*"
+},
+"config": {
+  "bin-dir": "bin"
+}
 {% endhighlight %}
 
-This will install the latest pre-release. If you want a particular pre-release,
-use the `-v` switch to indicate the version you'd like to install:
+Then we update the vendors:
 
 {% highlight bash %}
-gem install jekyll -v '2.0.0.alpha.1'
+~ $ cd my-project
+~/my-project $ composer update magephp/magallanes
 {% endhighlight %}
 
-If you'd like to install a development version of Jekyll, the process is a bit
-more involved. This gives you the advantage of having the latest and greatest,
-but may be unstable.
+And finally we can use Magallanes from the vendor's bin:
 
 {% highlight bash %}
-$ git clone git://github.com/jekyll/jekyll.git
-$ cd jekyll
-$ script/bootstrap
-$ bundle exec rake build
-$ ls pkg/*.gem | head -n 1 | xargs gem install -l
+~/my-project $ bin/mage version
 {% endhighlight %}
 
-## Optional Extras
+## Upgrade
 
-There are a number of (optional) extra features that Jekyll supports that you
-may want to install, depending on how you plan to use Jekyll. These extras
-include LaTeX support, and the use of alternative content rendering engines.
-Check out [the extras page](../extras/) for more information.
+Just as Install, Upgrading is very, very easy! Just run the `upgrade` command and
+Magallanes will auto-upgrade itself. Also with `version` you can find out the
+current installed version. Check out [the upgrading page](../upgrading/) for more
+information.
 
-<div class="note">
+<!--<div class="note">
   <h5>ProTip™: Enable Syntax Highlighting</h5>
   <p>
     If you’re the kind of person who is using Jekyll, then chances are you’ll
@@ -102,6 +107,6 @@ Check out [the extras page](../extras/) for more information.
     <a href="../templates/#code-snippet-highlighting">check out how to
     do that</a> before you go any farther.
   </p>
-</div>
+</div>-->
 
 Now that you’ve got everything installed, let’s get to work!

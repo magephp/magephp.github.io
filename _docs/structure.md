@@ -6,35 +6,29 @@ next_section: configuration
 permalink: /docs/structure/
 ---
 
-Jekyll is, at its core, a text transformation engine. The concept behind the
-system is this: you give it text written in your favorite markup language, be
-that Markdown, Textile, or just plain HTML, and it churns that through a layout
-or series of layout files. Throughout that process you can tweak how you want
-the site URLs to look, what data gets displayed in the layout, and more. This is
-all done through editing text files, and the static web site is the final
-product.
-
-A basic Jekyll site usually looks something like this:
+A basic Magallanes after init usually looks something like this:
 
 {% highlight bash %}
-.
-├── _config.yml
-├── _drafts
-|   ├── begin-with-the-crazy-ideas.textile
-|   └── on-simplicity-in-technology.markdown
-├── _includes
-|   ├── footer.html
-|   └── header.html
-├── _layouts
-|   ├── default.html
-|   └── post.html
-├── _posts
-|   ├── 2007-10-29-why-every-programmer-should-play-nethack.textile
-|   └── 2009-04-26-barcamp-boston-4-roundup.textile
-├── _data
-|   └── members.yml
-├── _site
-└── index.html
+.mage
+├── config
+│   ├── environment
+│   │   ├── production.yml
+│   │   └── staging.yml
+│   └── general.yml
+├── logs
+│   ├── log-20150828-050458.log
+│   ├── log-20150828-051032.log
+│   ├── log-20150828-051640.log
+│   ├── log-20150828-053837.log
+│   └── log-20150829-160601.log
+├── tasks
+│   ├── Permissions.php
+│   ├── SetEnvDev.php
+│   └── SetEnvProd.php
+└── commands
+    ├── HelloWorld.php
+    ├── CommitMe.php
+    └── CheckUpdate.php
 {% endhighlight %}
 
 An overview of what each of these does:
@@ -50,120 +44,77 @@ An overview of what each of these does:
   <tbody>
     <tr>
       <td>
-        <p><code>_config.yml</code></p>
+        <p><code>.mage</code></p>
       </td>
       <td>
         <p>
 
-          Stores <a href="../configuration/">configuration</a> data. Many of
-          these options can be specified from the command line executable but
-          it’s easier to specify them here so you don’t have to remember them.
+          Magallanes project-specificed folder which auto-generated after <strong>init</strong>,
+          this folder must be inside your project root folder.
 
         </p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><code>_drafts</code></p>
+        <p><code>config</code></p>
       </td>
       <td>
         <p>
 
-          Drafts are unpublished posts. The format of these files is without a date: <code>title.MARKUP</code>. Learn how to <a href="../drafts/">work with drafts</a>.
+          The main <strong>general.yml</strong> configuration file is stored here.
 
         </p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><code>_includes</code></p>
+        <p><code>environment</code></p>
       </td>
       <td>
         <p>
 
-          These are the partials that can be mixed and matched by your layouts
-          and posts to facilitate reuse. The liquid tag
-          <code>{% raw %}{% include file.ext %}{% endraw %}</code>
-          can be used to include the partial in
-          <code>_includes/file.ext</code>.
+          Stores all environment configuration files. The file name will be
+          the environment name you use while deploy <code>mage deploy to:environment_name</code>.
 
         </p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><code>_layouts</code></p>
+        <p><code>logs</code></p>
       </td>
       <td>
         <p>
 
-          These are the templates that wrap posts. Layouts are chosen on a post-
-          by-post basis in the <a href="../frontmatter/">YAML Front Matter</a>,
-          which is described in the next section. The liquid tag
-          <code>{% raw %}{{ content }}{% endraw %}</code>
-          is used to inject content into the web page.
+          If logging function is enable in <strong>general.yml</strong>, all logs
+          will be saved in this directory.
 
         </p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><code>_posts</code></p>
+        <p><code>tasks</code></p>
       </td>
       <td>
         <p>
 
-          Your dynamic content, so to speak. The naming convention of these files is
-          important, and must follow the format:
-          <code>YEAR-MONTH-DAY-title.MARKUP</code>.
-          The <a href="../permalinks/">permalinks</a> can be customized for each
-          post, but the date and markup language are determined solely by the
-          file name.
+          Your custom tasks need to be put here, inside this folder, to make sure
+          Magallanes is able read its.
 
         </p>
       </td>
     </tr>
     <tr>
       <td>
-        <p><code>_data</code></p>
+        <p><code>commands</code></p>
       </td>
       <td>
         <p>
 
-          Well-formatted site data should be placed here. The jekyll engine will
-          autoload all yaml files (ends with <code>.yml</code> or <code>.yaml</code>)
-          in this directory. If there's a file <code>members.yml</code> under the directory,
-          then you can access contents of the file through <code>site.data.members</code>.
-
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><code>_site</code></p>
-      </td>
-      <td>
-        <p>
-
-          This is where the generated site will be placed (by default) once
-          Jekyll is done transforming it. It’s probably a good idea to add this
-          to your <code>.gitignore</code> file.
-
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p><code>index.html</code> and other HTML, Markdown, Textile files</p>
-      </td>
-      <td>
-        <p>
-
-          Provided that the file has a <a href="../frontmatter/">YAML Front
-          Matter</a> section, it will be transformed by Jekyll. The same will
-          happen for any <code>.html</code>, <code>.markdown</code>,
-          <code>.md</code>, or <code>.textile</code> file in your site’s root
-          directory or directories not listed above.
+          Every custom command must be stored in this directory.
+          This directory is not created by default, you need to create it manually.
 
         </p>
       </td>
@@ -175,12 +126,10 @@ An overview of what each of these does:
       <td>
         <p>
 
-          Every other directory and file except for those listed above—such as
-          <code>css</code> and <code>images</code> folders,
-          <code>favicon.ico</code> files, and so forth—will be copied verbatim
-          to the generated site. There are plenty of <a href="../sites/">sites
-          already using Jekyll</a> if you’re curious to see how they’re laid
-          out.
+          Inside <em>environment</em>, <em>logs</em> and <em>tasks</em>;
+          Magallanes will auto-generate a <strong>.gitignore</strong> to execute the holy jobs.
+          Sometime, in <em>.mage</em> folder, you will see <strong>~working.lock</strong>
+          Don't worry about it, it is Magallanes protection.
 
         </p>
       </td>

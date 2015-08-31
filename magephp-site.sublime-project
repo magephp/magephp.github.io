@@ -1,0 +1,85 @@
+{
+	"folders":
+	[
+		{
+			"path": "./",
+			"name": "root",
+			"file_exclude_patterns":[
+				"._*",
+				"*.swf",
+				"*.swp"
+			],
+			"folder_exclude_patterns":[
+				".phpintel",
+				".idea",
+				".sass-cache",
+				"_site",
+				"_docs",
+				"_includes",
+				"_layouts",
+				"_posts",
+				"_sass"
+			]
+		},
+		{
+			"path": "./_docs",
+			"name": "docs",
+			"file_exclude_patterns":[
+				"._*",
+				"*.swf",
+				"*.swp"
+			],
+			"folder_exclude_patterns":[
+				".phpintel"
+			]
+		},
+		{
+			"path": "./_includes",
+			"name": "includes",
+			"file_exclude_patterns":[
+				"._*",
+				"*.swf",
+				"*.swp"
+			],
+			"folder_exclude_patterns":[
+				".phpintel"
+			]
+		},
+		{
+			"path": "./_layouts",
+			"name": "layouts",
+			"file_exclude_patterns":[
+				"._*",
+				"*.swf",
+				"*.swp"
+			],
+			"folder_exclude_patterns":[
+				".phpintel"
+			]
+		},
+		{
+			"path": "./_posts",
+			"name": "posts",
+			"file_exclude_patterns":[
+				"._*",
+				"*.swf",
+				"*.swp"
+			],
+			"folder_exclude_patterns":[
+				".phpintel"
+			]
+		},
+		{
+			"path": "./_sass",
+			"name": "sass",
+			"file_exclude_patterns":[
+				"._*",
+				"*.swf",
+				"*.swp"
+			],
+			"folder_exclude_patterns":[
+				".phpintel"
+			]
+		}
+	]
+}

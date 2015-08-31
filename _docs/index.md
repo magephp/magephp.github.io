@@ -6,8 +6,7 @@ permalink: /docs/home/
 ---
 
 This site aims to be a comprehensive guide to Magallanes. We’ll cover topics such
-as getting your site up and running, deploying to various environments, 
-
+as getting your site up and running, deploying to various environments,
 and give you some advice on participating in the future
 development of Magallanes itself.
 

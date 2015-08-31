@@ -6,31 +6,35 @@ next_section: contributing
 permalink: /docs/upgrading/
 ---
 
-Upgrading from an older version of Jekyll? A few things have changed in 1.0
+Upgrading from an older version of Magallanes? A few things have changed in 1.0.x
 that you'll want to know about.
 
-Before we dive in, go ahead and fetch the latest version of Jekyll:
+Before we dive in, go ahead and fetch the latest version of Magallanes (system-wide):
 
 {% highlight bash %}
-$ gem update jekyll
+$ mage upgrade
 {% endhighlight %}
 
 <div class="note feature">
   <h5 markdown="1">Diving in</h5>
-  <p markdown="1">Want to get a new Jekyll site up and running quickly? Simply
-   run <code>jekyll new SITENAME</code> to create a new folder with a bare bones
-   Jekyll site.</p>
+  <p markdown="1">After fetching `upgrade.json` file from the update server.
+   Magallanes will auto-upgrade itself. You can check the current version
+   with the lovely command: `mage version`</p>
 </div>
 
-### The Jekyll Command
+### With the Composer
 
-For better clarity, Jekyll now accepts the commands `build` and `serve`.
-Whereas before you might simply run the command `jekyll` to generate a site
-and `jekyll --server` to view it locally, now use the subcommands `jekyll build`
-and `jekyll serve` to do the same. And if you want Jekyll to automatically
-rebuild each time a file changes, just add the `--watch` flag at the end.
+You are fan of Composer? Then I don't think there is any way can be more simple
+than using Composer to upgrade Magallanes. You only need to run the following
+command to upgrade Magallanes to latest version on the sky.
 
-<div class="note info">
+{% highlight bash %}
+~ $ cd my-project
+~/my-project $ composer update magephp/magallanes
+# => Magallanes is up-to-date now!
+{% endhighlight %}
+
+<!-- <div class="note info">
   <h5>Watching and Serving</h5>
   <p markdown="1">With the new subcommands, the way sites are previewed locally
    changed a bit. Instead of specifying `server: true` in the site's
@@ -143,4 +147,4 @@ expect in both environments.
   result in two leading slashes, which will break links. It is thus
   suggested that prefixing with `site.baseurl` only be used when the
   `baseurl` is something other than the default of `/`.</p>
-</div>
+</div> -->

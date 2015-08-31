@@ -1,0 +1,20 @@
+{
+    "name": "magephp/magallanes-site",
+    "type": "library",
+    "description": "Magallanes Official Sites",
+    "keywords": ["phpdoc"],
+    "homepage": "https://magephp.github.io",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Toan Nguyen",
+            "email": "nntoan@protonmail.com"
+        }
+    ],
+    "require": {
+        "magephp/magallanes": "~1.1"
+    },
+    "config": {
+        "vendor-dir": "_vendor"
+    }
+}
