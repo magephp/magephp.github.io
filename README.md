@@ -1,10 +1,10 @@
-# Jekyll docs site
+# Magallanes docs site
 
-This directory contains the code for the Jekyll docs site, [jekyllrb.com](http://jekyllrb.com/).
+This directory contains the code for the Magallanes docs site, [magephp.github.io](https://magephp.github.io/).
 
 ## Contributing
 
-For information about contributing, see the [Contributing page](http://jekyllrb.com/docs/contributing/).
+For information about contributing, see the [Contributing page](http://magephp.github.io/docs/contributing/).
 
 ## Running locally
 

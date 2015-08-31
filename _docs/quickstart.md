@@ -6,21 +6,20 @@ next_section: installation
 permalink: /docs/quickstart/
 ---
 
-For the impatient, here's how to get a boilerplate Jekyll site up and running.
+For the impatient, here's how to get Magallanes up and running
+globally with Composer.
 
 {% highlight bash %}
-~ $ gem install jekyll
-~ $ jekyll new myblog
-~ $ cd myblog
-~/myblog $ jekyll serve
-# => Now browse to http://localhost:4000
+~ $ composer global require magephp/magallanes=~1.0
+~ $ mage version
+~ $ cd my-project
+~/my-project $ mage init --name=MyProject --email=my@email.com
+~/my-project $ mage add --name=production --enableReleases
+# => Now we ready to deploy!
 {% endhighlight %}
 
-If you wish to install jekyll into the current directory, you can do so by alternatively running `jekyll new .` instead of a new directory name.
-
-That's nothing, though. The real magic happens when you start creating blog
-posts, using the front matter to control templates and layouts, and taking
-advantage of all the awesome configuration options Jekyll makes available.
+Make sure you have `~/.composer/vendor/bin/` in your path.
+You can now use Magallanes by using the `mage` command.
 
 If you're running into problems, ensure you have all the [requirements
 installed][Installation].

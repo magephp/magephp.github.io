@@ -1,6 +1,9 @@
 _site/
+_vendor/
 *.swp
 pkg/
 test/
 .DS_Store
 /.sass-cache
+/.api-cache
+/api
