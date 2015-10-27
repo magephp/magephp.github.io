@@ -10,7 +10,7 @@ For the impatient, here's how to get Magallanes up and running
 globally with Composer.
 
 {% highlight bash %}
-~ $ composer global require magephp/magallanes=~1.0
+~ $ composer global require magephp/magallanes=~1.1
 ~ $ mage version
 ~ $ cd my-project
 ~/my-project $ mage init --name=MyProject --email=my@email.com

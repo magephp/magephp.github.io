@@ -71,7 +71,7 @@ declared as a vendor binary, so you can invoke Magallanes using `bin/mage`. Pret
 
 {% highlight json %}
 "require-dev": {
-  "magephp/magallanes": "~1.0.*"
+  "magephp/magallanes": "~1.1"
 },
 "config": {
   "bin-dir": "bin"
