@@ -1,9 +1,13 @@
 language: ruby
-cache: bundler
-sudo: false
 rvm: 2.1
-before_script: bundle install --no-deployment
-script: bundle exec jekyll build
+sudo: false
+cache:
+  directories:
+    - vendor/bundle
+install:
+  - bundle install --path vendor/bundle
+script:
+  - bundle exec jekyll build
 branches:
   only:
     - gh-pages

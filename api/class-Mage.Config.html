@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class Mage\Config | Magallanes API Documentation</title>
+
+	<link rel="stylesheet" href="resources/style.css?e99947befd7bf673c6b43ff75e9e0f170c88a60e">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-Mage.html">
+						Mage<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Mage.Command.html">
+						Command<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Mage.Command.BuiltIn.html">
+						BuiltIn					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Mage.Config.html">
+						Config					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Console.html">
+						Console					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.html">
+						Task<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.html">
+						BuiltIn<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Composer.html">
+						Composer					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Deployment.html">
+						Deployment<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Deployment.Strategy.html">
+						Strategy					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Filesystem.html">
+						Filesystem					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.General.html">
+						General					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Ioncube.html">
+						Ioncube					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Magento.html">
+						Magento					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Releases.html">
+						Releases					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Scm.html">
+						Scm					</a>
+
+						</li>
+				<li>
+					<a href="namespace-Mage.Task.BuiltIn.Symfony2.html">
+						Symfony2					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Mage.Task.Releases.html">
+						Releases					</a>
+
+						</li>
+							</ul></li>
+				<li>
+					<a href="namespace-Mage.Yaml.html">
+						Yaml<span></span>
+					</a>
+
+						<ul>
+				<li>
+					<a href="namespace-Mage.Yaml.Exception.html">
+						Exception					</a>
+
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-Mage.Autoload.html">Autoload</a></li>
+				<li><a href="class-Mage.Compiler.html">Compiler</a></li>
+				<li class="active"><a href="class-Mage.Config.html">Config</a></li>
+				<li><a href="class-Mage.Console.html">Console</a></li>
+				<li><a href="class-Mage.Mailer.html">Mailer</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-Mage.html" title="Summary of Mage"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class Config</h1>
+
+
+	<div class="description">
+	<p>Magallanes Configuration</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-Mage.html">Mage</a><br>
+		
+
+				<b>Author:</b>
+				J.Moriarty <a href="&#x6d;&#x61;&#x69;&#108;&#116;&#111;&#58;m&#x6f;&#x72;&#x69;&#x61;&#114;&#116;&#121;&#64;&#x63;&#x6f;&#x64;&#x65;&#102;&#101;&#108;&#111;&#x6e;&#x79;&#x2e;&#x63;&#111;&#109;">m&#x6f;&#x72;&#x69;&#x61;&#114;&#116;&#121;&#64;&#x63;&#x6f;&#x64;&#x65;&#102;&#101;&#108;&#111;&#x6e;&#x79;&#x2e;&#x63;&#111;&#109;</a><br>
+			<b>Located at</b> <a href="source-class-Mage.Config.html#20-686" title="Go to source code">Config.php</a>
+		<br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="parse" id="_parse">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parse">#</a>
+		<code><a href="source-class-Mage.Config.html#70-96" title="Go to source code">parse</a>( <span> <var>$arguments</var></span> )</code>
+
+		<div class="description short">
+			<p>Parse the Command Line options</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Parse the Command Line options</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arguments</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initGeneral" id="_initGeneral">
+
+		<td class="attributes"><code>
+			 protected 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initGeneral">#</a>
+		<code><a href="source-class-Mage.Config.html#98-108" title="Go to source code">initGeneral</a>( )</code>
+
+		<div class="description short">
+			<p>Initializes the General Configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initializes the General Configuration</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadGeneral" id="_loadGeneral">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadGeneral">#</a>
+		<code><a href="source-class-Mage.Config.html#110-121" title="Go to source code">loadGeneral</a>( <span> <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			<p>Load general config from the given file</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Load general config from the given file</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					<code><a href="class-Mage.Config.ConfigNotFoundException.html">Mage\Config\ConfigNotFoundException</a></code>
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="loadEnvironment" id="_loadEnvironment">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_loadEnvironment">#</a>
+		<code><a href="source-class-Mage.Config.html#123-135" title="Go to source code">loadEnvironment</a>( <span> <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			<p>Loads the Environment configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Loads the Environment configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd>string</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="initEnvironment" id="_initEnvironment">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_initEnvironment">#</a>
+		<code><a href="source-class-Mage.Config.html#137-156" title="Go to source code">initEnvironment</a>( )</code>
+
+		<div class="description short">
+			<p>Initializes the Environment configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Initializes the Environment configuration</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+				<h4>Throws</h4>
+				<div class="list">
+					Exception
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="isRunInSpecialMode" id="_isRunInSpecialMode">
+
+		<td class="attributes"><code>
+			 protected 
+
+			boolean
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_isRunInSpecialMode">#</a>
+		<code><a href="source-class-Mage.Config.html#158-175" title="Go to source code">isRunInSpecialMode</a>( <span>array <var>$parameters</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$parameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					boolean
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="load" id="_load">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_load">#</a>
+		<code><a href="source-class-Mage.Config.html#177-187" title="Go to source code">load</a>( <span>array <var>$arguments</var></span> )</code>
+
+		<div class="description short">
+			<p>Load the Configuration and parses the Arguments</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Load the Configuration and parses the Arguments</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$arguments</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="reload" id="_reload">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_reload">#</a>
+		<code><a href="source-class-Mage.Config.html#189-196" title="Go to source code">reload</a>( )</code>
+
+		<div class="description short">
+			<p>Reloads the configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Reloads the configuration</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getArgument" id="_getArgument">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getArgument">#</a>
+		<code><a href="source-class-Mage.Config.html#198-212" title="Go to source code">getArgument</a>( <span>integer <var>$position</var> = <span class="php-num">0</span></span> )</code>
+
+		<div class="description short">
+			<p>Return the invocation argument based on a position
+0 = Invoked Command Name</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the invocation argument based on a position
+0 = Invoked Command Name</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$position</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getArguments" id="_getArguments">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getArguments">#</a>
+		<code><a href="source-class-Mage.Config.html#214-222" title="Go to source code">getArguments</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all the invocation arguments</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all the invocation arguments</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameter" id="_getParameter">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameter">#</a>
+		<code><a href="source-class-Mage.Config.html#224-241" title="Go to source code">getParameter</a>( <span>string <var>$name</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$extraParameters</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Return the a parameter</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Return the a parameter</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+					<dt><var>$extraParameters</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getParameters" id="_getParameters">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getParameters">#</a>
+		<code><a href="source-class-Mage.Config.html#243-251" title="Go to source code">getParameters</a>( )</code>
+
+		<div class="description short">
+			<p>Returns all the invocation arguments</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns all the invocation arguments</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="addParameter" id="_addParameter">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_addParameter">#</a>
+		<code><a href="source-class-Mage.Config.html#253-261" title="Go to source code">addParameter</a>( <span>string <var>$name</var></span>, <span>mixed <var>$value</var> = <span class="php-keyword1">true</span></span> )</code>
+
+		<div class="description short">
+			<p>Adds (or replaces) a parameter</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Adds (or replaces) a parameter</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$name</var></dt>
+					<dd></dd>
+					<dt><var>$value</var></dt>
+					<dd></dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnvironment" id="_getEnvironment">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnvironment">#</a>
+		<code><a href="source-class-Mage.Config.html#263-271" title="Go to source code">getEnvironment</a>( )</code>
+
+		<div class="description short">
+			<p>Returns the Current environment</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns the Current environment</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getTasks" id="_getTasks">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getTasks">#</a>
+		<code><a href="source-class-Mage.Config.html#273-312" title="Go to source code">getTasks</a>( <span>string <var>$stage</var> = <span class="php-quote">'deploy'</span></span> )</code>
+
+		<div class="description short">
+			<p>Get the Tasks to execute</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the Tasks to execute</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$stage</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHosts" id="_getHosts">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHosts">#</a>
+		<code><a href="source-class-Mage.Config.html#314-333" title="Go to source code">getHosts</a>( )</code>
+
+		<div class="description short">
+			<p>Get the current Hosts to deploy</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the current Hosts to deploy</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHost" id="_setHost">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHost">#</a>
+		<code><a href="source-class-Mage.Config.html#335-345" title="Go to source code">setHost</a>( <span>string <var>$host</var></span> )</code>
+
+		<div class="description short">
+			<p>Set the current host</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the current host</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$host</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setHostConfig" id="_setHostConfig">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setHostConfig">#</a>
+		<code><a href="source-class-Mage.Config.html#347-357" title="Go to source code">setHostConfig</a>( <span>array <var>$hostConfig</var> = <span class="php-keyword1">null</span></span> )</code>
+
+		<div class="description short">
+			<p>Set the host specific configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set the host specific configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$hostConfig</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHostName" id="_getHostName">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHostName">#</a>
+		<code><a href="source-class-Mage.Config.html#359-368" title="Go to source code">getHostName</a>( )</code>
+
+		<div class="description short">
+			<p>Get the current host name</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the current host name</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHostPort" id="_getHostPort">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHostPort">#</a>
+		<code><a href="source-class-Mage.Config.html#370-380" title="Go to source code">getHostPort</a>( )</code>
+
+		<div class="description short">
+			<p>Get the current Host Port</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the current Host Port</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHostIdentityFileOption" id="_getHostIdentityFileOption">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHostIdentityFileOption">#</a>
+		<code><a href="source-class-Mage.Config.html#382-390" title="Go to source code">getHostIdentityFileOption</a>( )</code>
+
+		<div class="description short">
+			<p>Get the general Host Identity File Option</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the general Host Identity File Option</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getConnectTimeoutOption" id="_getConnectTimeoutOption">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getConnectTimeoutOption">#</a>
+		<code><a href="source-class-Mage.Config.html#392-400" title="Go to source code">getConnectTimeoutOption</a>( )</code>
+
+		<div class="description short">
+			<p>Get the ConnectTimeout option</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the ConnectTimeout option</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHost" id="_getHost">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHost">#</a>
+		<code><a href="source-class-Mage.Config.html#402-410" title="Go to source code">getHost</a>( )</code>
+
+		<div class="description short">
+			<p>Get the current Host</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get the current Host</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="general" id="_general">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_general">#</a>
+		<code><a href="source-class-Mage.Config.html#412-431" title="Go to source code">general</a>( <span>string <var>$option</var></span>, <span>boolean|string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Gets General Configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets General Configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="environmentConfig" id="_environmentConfig">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_environmentConfig">#</a>
+		<code><a href="source-class-Mage.Config.html#433-443" title="Go to source code">environmentConfig</a>( <span>string <var>$option</var></span>, <span>boolean|string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Gets Environments Full Configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets Environments Full Configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="deployment" id="_deployment">
+
+		<td class="attributes"><code>
+			 public 
+
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_deployment">#</a>
+		<code><a href="source-class-Mage.Config.html#445-472" title="Go to source code">deployment</a>( <span>string <var>$option</var></span>, <span>boolean|string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Get deployment configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get deployment configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					string
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="extras" id="_extras">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_extras">#</a>
+		<code><a href="source-class-Mage.Config.html#474-523" title="Go to source code">extras</a>( <span>string <var>$option</var></span>, <span>string <var>$property</var> = <span class="php-quote">'top'</span></span>, <span>boolean|string|array <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Get extras configuration</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get extras configuration</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$property</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setSourceTemporal" id="_setSourceTemporal">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setSourceTemporal">#</a>
+		<code><a href="source-class-Mage.Config.html#525-528" title="Go to source code">setSourceTemporal</a>( <span> <var>$directory</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="release" id="_release">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_release">#</a>
+		<code><a href="source-class-Mage.Config.html#530-556" title="Go to source code">release</a>( <span>string <var>$option</var></span>, <span>boolean|string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+
+		<div class="description short">
+			<p>Returns Releasing Options</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Returns Releasing Options</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setFrom" id="_setFrom">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setFrom">#</a>
+		<code><a href="source-class-Mage.Config.html#558-568" title="Go to source code">setFrom</a>( <span>string <var>$from</var></span> )</code>
+
+		<div class="description short">
+			<p>Set From Deployment Path</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Set From Deployment Path</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$from</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setReleaseId" id="_setReleaseId">
+
+		<td class="attributes"><code>
+			 public 
+
+			<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_setReleaseId">#</a>
+		<code><a href="source-class-Mage.Config.html#570-580" title="Go to source code">setReleaseId</a>( <span>integer <var>$id</var></span> )</code>
+
+		<div class="description short">
+			<p>Sets the Current Release ID</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Sets the Current Release ID</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$id</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code><a href="class-Mage.Config.html">Mage\Config</a></code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getReleaseId" id="_getReleaseId">
+
+		<td class="attributes"><code>
+			 public 
+
+			integer
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getReleaseId">#</a>
+		<code><a href="source-class-Mage.Config.html#582-590" title="Go to source code">getReleaseId</a>( )</code>
+
+		<div class="description short">
+			<p>Gets the Current Release ID</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Gets the Current Release ID</p>
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					integer
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnvironmentOption" id="_getEnvironmentOption">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnvironmentOption">#</a>
+		<code><a href="source-class-Mage.Config.html#592-607" title="Go to source code">getEnvironmentOption</a>( <span>string <var>$option</var></span>, <span>mixed <var>$default</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Get Environment root option</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get Environment root option</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getNestedEnvironmentOption" id="_getNestedEnvironmentOption">
+
+		<td class="attributes"><code>
+			 public 
+
+			mixed
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getNestedEnvironmentOption">#</a>
+		<code><a href="source-class-Mage.Config.html#609-624" title="Go to source code">getNestedEnvironmentOption</a>( <span>string <var>$option</var></span>, <span>mixed <var>$property</var></span>, <span> <var>$default</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+		<div class="description short">
+			<p>Get Environment nested root option</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Get Environment nested root option</p>
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$option</var></dt>
+					<dd></dd>
+					<dt><var>$property</var></dt>
+					<dd>$default</dd>
+					<dt><var>$default</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					mixed
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseConfigFile" id="_parseConfigFile">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseConfigFile">#</a>
+		<code><a href="source-class-Mage.Config.html#626-636" title="Go to source code">parseConfigFile</a>( <span> <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			<p>Utility methods. TODO To be extracted into own Class</p>
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Utility methods. TODO To be extracted into own Class</p>
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="parseConfigText" id="_parseConfigText">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_parseConfigText">#</a>
+		<code><a href="source-class-Mage.Config.html#638-641" title="Go to source code">parseConfigText</a>( <span> <var>$input</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getGeneralConfig" id="_getGeneralConfig">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getGeneralConfig">#</a>
+		<code><a href="source-class-Mage.Config.html#643-649" title="Go to source code">getGeneralConfig</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getEnvironmentConfig" id="_getEnvironmentConfig">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getEnvironmentConfig">#</a>
+		<code><a href="source-class-Mage.Config.html#651-657" title="Go to source code">getEnvironmentConfig</a>( )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getHostsFromFile" id="_getHostsFromFile">
+
+		<td class="attributes"><code>
+			 protected 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getHostsFromFile">#</a>
+		<code><a href="source-class-Mage.Config.html#659-685" title="Go to source code">getHostsFromFile</a>( <span>string <var>$filePath</var></span> )</code>
+
+		<div class="description short">
+			
+		</div>
+
+		<div class="description detailed hidden">
+			
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$filePath</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					array
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+	<table class="summary constants" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="HOST_NAME_LENGTH" id="HOST_NAME_LENGTH">
+
+		<td class="attributes"><code>integer</code></td>
+		<td class="name">
+			<code>
+				<a href="source-class-Mage.Config.html#27" title="Go to source code"><b>HOST_NAME_LENGTH</b></a>
+			</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+			</div>
+		</td>
+		<td class="value">
+			<div>
+				<a href="#HOST_NAME_LENGTH" class="anchor">#</a>
+				<code><span class="php-num">1000</span></code>
+			</div>
+		</td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Magallanes API Documentation API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
