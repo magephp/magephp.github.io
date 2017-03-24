@@ -21,7 +21,7 @@ To understand about directory structure in this tool, please read [here](../stru
 $ mage init --name="My fantastic app" --email="notifications@my.app" 
 {% endhighlight %}
 
-Right now the most important file is <code>.mage/confg/general.yml</code>. In there is 
+Right now the most important file is <code>.mage/config/general.yml</code>. In there is 
 stored the project name and notification email, and also if notification delivery and 
 logging are enabled. The log files store everything Magallanes does, all commands and 
 results, so if you need to debug something that's the place to start with. The maxlogs 
